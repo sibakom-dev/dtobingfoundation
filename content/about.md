@@ -5,7 +5,7 @@ title: About Us
 subtitle: "Who we are and why we do what we do."
 pageDescription: "Learn about The Darius Tobing Foundation, our story, vision, mission, values, and the people behind our work."
 ogImage: /media/YDT_Full_Logo_English_Color_On_White_5x-scaled.png
-ourStoryText: "<p>The Darius Tobing Foundation was established in Jakarta with a singular belief: that commerce, culture, and compassion can coexist. Named after a visionary whose passion for Indonesia's heritage ran deep, the foundation channels that spirit into three interconnected programs.</p><p>We work alongside rural artisans, urban communities, and animal shelters, weaving together a mission that touches both heritage and humanity.</p>"
+ourStoryText: "<p>The Darius Tobing Foundation (Yayasan Darius Tobing) is a Jakarta-based non-profit organization established in 2013 that fights poverty, empowers village communities, unlocks local potential, and preserves traditional Indonesian heritage.</p>"
 ourStoryImage: /media/IMG_7909.jpg
 visionText: "A more compassionate and sustainable Indonesia, where cultural heritage thrives, communities are empowered, and every living being is treated with dignity."
 missionText: "To preserve Indonesian craftsmanship, support marginalized communities through ethical commerce and direct philanthropy, and champion animal welfare through education and shelter."
