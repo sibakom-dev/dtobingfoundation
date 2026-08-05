@@ -1,0 +1,91 @@
+---
+layout: base.njk
+---
+
+<div class="page-hero--simple" style="background: var(--color-navy);">
+  <div class="container" style="padding-block: var(--space-xl);">
+    <h1 class="page-hero__title">{{ title }}</h1>
+    <p class="page-hero__subtitle">{{ subtitle }}</p>
+  </div>
+</div>
+
+<div class="about-page container">
+
+  <section aria-labelledby="our-story">
+    <div class="section-content">
+      <div class="section-content__text">
+        <div class="section-header">
+          <h2 class="section-header__heading" id="our-story">Our Story</h2>
+        </div>
+        {{ ourStoryText | safe }}
+      </div>
+      <div class="section-content__image">
+        <img src="{{ ourStoryImage }}" alt="Our Story Image" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="vision-mission" style="background: var(--color-cream); padding: var(--space-xl); border-radius: 8px; margin-bottom: var(--space-2xl);">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+      <div>
+        <div class="section-header">
+          <h2 class="section-header__heading" id="vision-mission">Vision</h2>
+        </div>
+        <p style="color: var(--color-text-muted);">{{ visionText }}</p>
+      </div>
+      <div>
+        <div class="section-header">
+          <h2 class="section-header__heading">Mission</h2>
+        </div>
+        <p style="color: var(--color-text-muted);">{{ missionText }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="values">
+    <div class="section-header">
+      <h2 class="section-header__heading" id="values">Our Values</h2>
+    </div>
+    <div class="values-list">
+      {% for value in valuesList %}
+      <div class="value-item">
+        <h3 class="value-item__name">{{ value.name }}</h3>
+        <p class="value-item__desc">{{ value.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section aria-labelledby="founders" style="margin-top: var(--space-2xl);">
+    <div class="section-header">
+      <h2 class="section-header__heading" id="founders">Our Founders</h2>
+    </div>
+    <div class="founders-grid">
+      {% for founder in foundersList %}
+      <div class="founder-card">
+        <div class="founder-card__image">
+          <img src="{{ founder.image }}" alt="{{ founder.name }}" loading="lazy">
+        </div>
+        <h3 class="founder-card__name">{{ founder.name }}</h3>
+        <p class="founder-card__role">{{ founder.role }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section aria-labelledby="partners" style="margin-top: var(--space-2xl); margin-bottom: var(--space-2xl);">
+    <div class="section-header">
+      <h2 class="section-header__heading" id="partners">Our Partners</h2>
+    </div>
+    <div class="partners-grid">
+      {% for partner in partnersList %}
+      <img class="partner-logo" src="{{ partner.image }}" alt="{{ partner.name }}" loading="lazy">
+      {% endfor %}
+    </div>
+  </section>
+
+</div>
+
+{% set heading = ctaHeading %}
+{% set eyebrow = ctaEyebrow %}
+{% include "cta-banner.njk" %}

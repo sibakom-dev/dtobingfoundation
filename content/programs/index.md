@@ -3,6 +3,7 @@ layout: base.njk
 permalink: /programs/
 title: Our Programs
 pageDescription: "The Darius Tobing Foundation's three pillars: Paisley Things, Lokal Indonesia, and Urip Gawe Urup, working together for heritage and humanity."
+eleventyExcludeFromCollections: true
 ---
 
 <div class="page-hero--simple" style="background: var(--color-navy);">

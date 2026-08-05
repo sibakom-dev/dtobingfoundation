@@ -67,6 +67,8 @@ input, textarea, select { font: inherit; }
   margin-inline: auto;
   padding-inline: clamp(1rem, 4vw, 2rem);
 }
+/* Fix for markdown parser generating <p> tags inside grid layouts */
+[class*="-grid"] > p, .story-grid > p, .gallery-grid > p, .contact-grid > p, .values-list > p { display: none !important; }
 .sr-only {
   position: absolute; width: 1px; height: 1px;
   padding: 0; margin: -1px; overflow: hidden;
@@ -99,6 +101,18 @@ input, textarea, select { font: inherit; }
   color: var(--color-text-muted);
   font-style: italic;
   margin: 1.5em 0;
+}
+
+/* Scroll Animations */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+.fade-in-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ── Buttons ─────────────────────────────────────────────────── */
@@ -164,7 +178,7 @@ input, textarea, select { font: inherit; }
   display: flex; align-items: center; gap: 1rem;
   padding-block: .75rem;
 }
-.navbar__logo img { height: 52px; width: auto; }
+.navbar__logo img { height: 80px; width: auto; }
 .navbar__menu {
   display: flex; align-items: center; gap: .25rem;
   margin-left: auto; flex-wrap: nowrap;
@@ -449,7 +463,7 @@ input, textarea, select { font: inherit; }
   gap: 3rem; padding-block: var(--space-xl);
 }
 .footer__brand { }
-.footer__brand img { filter: brightness(0) invert(1); margin-bottom: 1rem; }
+.footer__brand img { filter: invert(1) grayscale(1) brightness(2) contrast(2); mix-blend-mode: screen; margin-bottom: 1rem; }
 .footer__tagline { font-size: .85rem; color: rgba(255,255,255,.65); line-height: 1.65; max-width: 30ch; }
 .footer__nav ul { display: flex; flex-direction: column; gap: .6rem; }
 .footer__nav a { font-size: .88rem; color: rgba(255,255,255,.75); transition: color var(--transition); }

@@ -115,3 +115,46 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   start();
 })();
 
+// Scroll Animations (Subtle fade-in-up)
+document.addEventListener('DOMContentLoaded', () => {
+  // Elements that will receive the subtle animation
+  const animatedSelectors = [
+    '.program-card', 
+    '.story-card', 
+    '.event-card', 
+    '.involved-card', 
+    '.value-item', 
+    '.stat', 
+    '.testimonial-card', 
+    '.highlight-card',
+    '.section-header',
+    '.about-page .section-content__image'
+  ];
+  
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px 0px -50px 0px',
+    threshold: 0.15
+  };
+  
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll(animatedSelectors.join(', ')).forEach((el, i) => {
+    // Add the base animation class
+    el.classList.add('fade-in-up');
+    
+    // Add a slight stagger based on DOM order for elements appearing together
+    // Limit to 4 to avoid overly long delays
+    const delay = (i % 4) * 0.1;
+    el.style.transitionDelay = `${delay}s`;
+    
+    observer.observe(el);
+  });
+});

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dtobingfoundation.org/sitemap.xml
+Sitemap: https://dtobingfoundation.com/sitemap.xml

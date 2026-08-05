@@ -1,0 +1,86 @@
+---
+layout: base.njk
+---
+
+<div class="page-hero--simple" style="background: var(--color-navy);">
+  <div class="container" style="padding-block: var(--space-xl);">
+    <h1 class="page-hero__title">{{ title }}</h1>
+    <p class="page-hero__subtitle">{{ subtitle }}</p>
+  </div>
+</div>
+
+<div class="impact-page container">
+
+  {# STATISTICS #}
+  <section aria-labelledby="impact-stats">
+    <div class="section-header">
+      <h2 class="section-header__heading" id="impact-stats">Impact at a Glance</h2>
+    </div>
+    <div class="stats-bar" style="border-radius: 8px; overflow: hidden; margin-top: 1.5rem;">
+      <div class="stats-bar__grid" style="padding: 0;">
+        {% for stat in site.impactStats %}
+        <div class="stat">
+          <div class="stat__body">
+            <span class="stat__number">{{ stat.number }}</span>
+            <span class="stat__label">{{ stat.label }}</span>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  {# TESTIMONIALS #}
+  <section aria-labelledby="testimonials" style="margin-top: var(--space-2xl);">
+    <div class="section-header">
+      <h2 class="section-header__heading" id="testimonials">Voices of Change</h2>
+    </div>
+    <div class="testimonials-grid">
+      {% for testimonial in testimonialsList %}
+      <div class="testimonial-card">
+        <p class="testimonial-card__quote">"{{ testimonial.quote }}"</p>
+        <p class="testimonial-card__author">{{ testimonial.author }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  {# BENEFICIARIES #}
+  <section aria-labelledby="beneficiaries" style="margin-top: var(--space-2xl);">
+    <div class="section-header">
+      <h2 class="section-header__heading" id="beneficiaries">Who We Serve</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+      {% for beneficiary in beneficiariesList %}
+      <div style="background: var(--color-cream); border-radius: 8px; overflow: hidden;">
+        <img src="{{ beneficiary.image }}" alt="{{ beneficiary.title }}" loading="lazy" style="width:100%; aspect-ratio:4/3; object-fit:cover;">
+        <div style="padding: 1.25rem;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--color-navy); margin-bottom: .4rem;">{{ beneficiary.title }}</h3>
+          <p style="font-size: .88rem; color: var(--color-text-muted);">{{ beneficiary.description }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  {# ANNUAL HIGHLIGHTS #}
+  <section aria-labelledby="annual" style="margin-top: var(--space-2xl); margin-bottom: var(--space-2xl);">
+    <div class="section-header">
+      <h2 class="section-header__heading" id="annual">Annual Highlights</h2>
+    </div>
+    <div class="annual-highlights-grid">
+      {% for highlight in annualHighlightsList %}
+      <div class="highlight-card">
+        <p class="highlight-card__year">{{ highlight.year }}</p>
+        <h3 class="highlight-card__title">{{ highlight.title }}</h3>
+        <p class="highlight-card__text">{{ highlight.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+</div>
+
+{% set heading = ctaHeading %}
+{% set eyebrow = ctaEyebrow %}
+{% include "cta-banner.njk" %}

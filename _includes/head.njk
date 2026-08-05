@@ -1,21 +1,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="{{ pageDescription or site.seoDefaults.description }}">
-<title>{% if title %}{{ title }} – {{ site.siteName }}{% else %}{{ site.siteName }}{% endif %}</title>
+<title>{% if title %}{{ title }} | {{ site.siteName }}{% else %}{{ site.siteName }}{% endif %}</title>
 
 {# Canonical #}
 <link rel="canonical" href="{{ site.siteUrl }}{{ page.url }}">
 
 {# Open Graph #}
 <meta property="og:type" content="{{ ogType or 'website' }}">
-<meta property="og:title" content="{% if title %}{{ title }} – {{ site.siteName }}{% else %}{{ site.siteName }}{% endif %}">
+<meta property="og:title" content="{% if title %}{{ title }} | {{ site.siteName }}{% else %}{{ site.siteName }}{% endif %}">
 <meta property="og:description" content="{{ pageDescription or site.seoDefaults.description }}">
 <meta property="og:image" content="{{ site.siteUrl }}{{ ogImage or site.seoDefaults.image }}">
 <meta property="og:url" content="{{ site.siteUrl }}{{ page.url }}">
 
 {# Twitter Card #}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% if title %}{{ title }} – {{ site.siteName }}{% else %}{{ site.siteName }}{% endif %}">
+<meta name="twitter:title" content="{% if title %}{{ title }} | {{ site.siteName }}{% else %}{{ site.siteName }}{% endif %}">
 <meta name="twitter:description" content="{{ pageDescription or site.seoDefaults.description }}">
 <meta name="twitter:image" content="{{ site.siteUrl }}{{ ogImage or site.seoDefaults.image }}">
 
@@ -28,7 +28,7 @@
 <link rel="stylesheet" href="/assets/css/main.css">
 
 {# RSS Feed #}
-<link rel="alternate" type="application/rss+xml" title="{{ site.siteName }} – Stories" href="/stories/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="{{ site.siteName }} | Stories" href="/stories/feed.xml">
 
 {# Favicon #}
 <link rel="icon" type="image/svg+xml" href="/media/YDT_Logomark_Original.svg">

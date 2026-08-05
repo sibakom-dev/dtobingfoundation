@@ -1,22 +1,22 @@
 {
   "siteName": "The Darius Tobing Foundation",
-  "siteUrl": "https://dtobingfoundation.org",
-  "siteDescription": "A Jakarta-based non-profit dedicated to cultural preservation, community literacy, animal welfare, and ethical commerce.",
+  "siteUrl": "https://dtobingfoundation.com",
+  "siteDescription": "Darius Tobing Foundation",
   "logo": "/media/YDT_Full_Logo_English_Color_On_White_5x-scaled.png",
   "logoMark": "/media/YDT_Logomark_Original.svg",
-  "address": "Jakarta, Indonesia",
+  "address": "Jl. Bumi No.31, RT.12/RW.12, Gunung, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12120",
   "phone": "+62 21 000 0000",
-  "email": "info@dtobingfoundation.org",
-  "donateUrl": "https://donate.dtobingfoundation.org",
+  "email": "info@dtobingfoundation.com",
+  "donateUrl": "https://donate.dtobingfoundation.com",
   "socialLinks": {
     "instagram": "https://instagram.com/dtobingfoundation",
     "facebook": "https://facebook.com/dtobingfoundation",
     "youtube": "https://youtube.com/@dtobingfoundation",
-    "email": "mailto:info@dtobingfoundation.org"
+    "email": "mailto:info@dtobingfoundation.com"
   },
   "seoDefaults": {
     "title": "The Darius Tobing Foundation",
-    "description": "A Jakarta-based non-profit dedicated to cultural preservation, community literacy, animal welfare, and ethical commerce.",
+    "description": "Darius Tobing Foundation",
     "image": "/media/background_website_2mb.png"
   },
   "heroImage": "/media/background_website_2mb.png",
@@ -38,10 +38,25 @@
     }
   ],
   "impactStats": [
-    { "number": "30+", "label": "Artisan Markets Organized" },
-    { "number": "Hundreds", "label": "of Artisans Empowered" },
-    { "number": "2", "label": "Community Libraries Established" },
-    { "number": "Scholarships", "label": "for Higher Education Provided" },
-    { "number": "Countless", "label": "Animals Helped and Sheltered" }
+    {
+      "number": "30+",
+      "label": "Artisan Markets Organized"
+    },
+    {
+      "number": "Hundreds",
+      "label": "of Artisans Empowered"
+    },
+    {
+      "number": "2",
+      "label": "Community Libraries Established"
+    },
+    {
+      "number": "Scholarships",
+      "label": "for Higher Education Provided"
+    },
+    {
+      "number": "Countless",
+      "label": "Animals Helped and Sheltered"
+    }
   ]
 }

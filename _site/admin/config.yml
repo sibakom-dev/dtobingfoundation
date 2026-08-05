@@ -4,11 +4,11 @@ backend:
   branch: main
   base_url: https://sveltia-cms-auth.your-worker.workers.dev
 
-media_folder: uploads
-public_folder: /uploads
+media_folder: media
+public_folder: /media
 
-site_url: https://dtobingfoundation.org
-display_url: https://dtobingfoundation.org
+site_url: https://dtobingfoundation.com
+display_url: https://dtobingfoundation.com
 logo_url: /media/YDT_Logomark_Original.svg
 
 collections:
@@ -58,11 +58,14 @@ collections:
       - { label: Features, name: features, widget: list, required: false,
           field: { label: Feature, name: item, widget: string } }
       - { label: Registration Link, name: registrationLink, widget: string, required: false }
-      - { label: Gallery, name: gallery, widget: list, required: false,
-          fields:
-            - { label: Image, name: src, widget: image }
-            - { label: Alt Text, name: alt, widget: string, required: false }
-            - { label: Caption, name: caption, widget: string, required: false } }
+      - label: Gallery
+        name: gallery
+        widget: list
+        required: false
+        fields:
+          - { label: Image, name: src, widget: image }
+          - { label: Alt Text, name: alt, widget: string, required: false }
+          - { label: Caption, name: caption, widget: string, required: false }
       - { label: Body, name: body, widget: markdown }
       - { label: Page Description, name: pageDescription, widget: text, required: false }
       - { label: OG Image, name: ogImage, widget: image, required: false }
@@ -72,9 +75,6 @@ collections:
   - name: programs
     label: Programs
     label_singular: Program
-    folder: content/programs
-    create: false
-    slug: "{{slug}}"
     files:
       - label: Paisley Things
         name: paisley-things
@@ -87,15 +87,21 @@ collections:
               media_folder: /uploads/programs, public_folder: /uploads/programs }
           - { label: Objectives, name: objectives, widget: list, required: false,
               field: { label: Objective, name: item, widget: string } }
-          - { label: Activities, name: activities, widget: list, required: false,
-              fields:
-                - { label: Title, name: title, widget: string }
-                - { label: Description, name: description, widget: text }
-                - { label: Image, name: image, widget: image, required: false } }
-          - { label: Gallery, name: gallery, widget: list, required: false,
-              fields:
-                - { label: Image, name: src, widget: image }
-                - { label: Alt Text, name: alt, widget: string, required: false } }
+          - label: Activities
+            name: activities
+            widget: list
+            required: false
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: Image, name: image, widget: image, required: false }
+          - label: Gallery
+            name: gallery
+            widget: list
+            required: false
+            fields:
+              - { label: Image, name: src, widget: image }
+              - { label: Alt Text, name: alt, widget: string, required: false }
           - { label: Body, name: body, widget: markdown }
           - { label: Layout, name: layout, widget: hidden, default: program.njk }
       - label: Lokal Indonesia
@@ -109,15 +115,21 @@ collections:
               media_folder: /uploads/programs, public_folder: /uploads/programs }
           - { label: Objectives, name: objectives, widget: list, required: false,
               field: { label: Objective, name: item, widget: string } }
-          - { label: Activities, name: activities, widget: list, required: false,
-              fields:
-                - { label: Title, name: title, widget: string }
-                - { label: Description, name: description, widget: text }
-                - { label: Image, name: image, widget: image, required: false } }
-          - { label: Gallery, name: gallery, widget: list, required: false,
-              fields:
-                - { label: Image, name: src, widget: image }
-                - { label: Alt Text, name: alt, widget: string, required: false } }
+          - label: Activities
+            name: activities
+            widget: list
+            required: false
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: Image, name: image, widget: image, required: false }
+          - label: Gallery
+            name: gallery
+            widget: list
+            required: false
+            fields:
+              - { label: Image, name: src, widget: image }
+              - { label: Alt Text, name: alt, widget: string, required: false }
           - { label: Body, name: body, widget: markdown }
           - { label: Layout, name: layout, widget: hidden, default: program.njk }
       - label: Urip Gawe Urup
@@ -131,17 +143,119 @@ collections:
               media_folder: /uploads/programs, public_folder: /uploads/programs }
           - { label: Objectives, name: objectives, widget: list, required: false,
               field: { label: Objective, name: item, widget: string } }
-          - { label: Activities, name: activities, widget: list, required: false,
-              fields:
-                - { label: Title, name: title, widget: string }
-                - { label: Description, name: description, widget: text }
-                - { label: Image, name: image, widget: image, required: false } }
-          - { label: Gallery, name: gallery, widget: list, required: false,
-              fields:
-                - { label: Image, name: src, widget: image }
-                - { label: Alt Text, name: alt, widget: string, required: false } }
+          - label: Activities
+            name: activities
+            widget: list
+            required: false
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: Image, name: image, widget: image, required: false }
+          - label: Gallery
+            name: gallery
+            widget: list
+            required: false
+            fields:
+              - { label: Image, name: src, widget: image }
+              - { label: Alt Text, name: alt, widget: string, required: false }
           - { label: Body, name: body, widget: markdown }
           - { label: Layout, name: layout, widget: hidden, default: program.njk }
+
+  # ── PAGES ──────────────────────────────────────────────────
+  - name: pages
+    label: Pages
+    files:
+      - label: About Page
+        name: about
+        file: content/about.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string, required: false }
+          - { label: Page Description, name: pageDescription, widget: text, required: false }
+          - { label: OG Image, name: ogImage, widget: image, required: false }
+          - { label: Our Story Text, name: ourStoryText, widget: markdown }
+          - { label: Our Story Image, name: ourStoryImage, widget: image }
+          - { label: Vision Text, name: visionText, widget: text }
+          - { label: Mission Text, name: missionText, widget: text }
+          - label: Our Values
+            name: valuesList
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Description, name: description, widget: text }
+          - label: Founders
+            name: foundersList
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Role, name: role, widget: string }
+              - { label: Image, name: image, widget: image }
+          - label: Partners
+            name: partnersList
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Image, name: image, widget: image }
+          - { label: CTA Heading, name: ctaHeading, widget: string }
+          - { label: CTA Eyebrow, name: ctaEyebrow, widget: string }
+      - label: Get Involved
+        name: get-involved
+        file: content/get-involved.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string, required: false }
+          - { label: Page Description, name: pageDescription, widget: text, required: false }
+          - { label: OG Image, name: ogImage, widget: image, required: false }
+          - label: Opportunities
+            name: opportunities
+            widget: list
+            fields:
+              - { label: ID, name: id, widget: select, options: ["donate", "volunteer", "partnership", "donate-goods"] }
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: Button Text, name: buttonText, widget: string }
+              - { label: Button Link, name: buttonLink, widget: string }
+          - { label: CTA Heading, name: ctaHeading, widget: string }
+          - { label: CTA Eyebrow, name: ctaEyebrow, widget: string }
+      - label: Impact
+        name: impact
+        file: content/impact.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string, required: false }
+          - { label: Page Description, name: pageDescription, widget: text, required: false }
+          - { label: OG Image, name: ogImage, widget: image, required: false }
+          - label: Testimonials
+            name: testimonialsList
+            widget: list
+            fields:
+              - { label: Quote, name: quote, widget: text }
+              - { label: Author, name: author, widget: string }
+          - label: Beneficiaries
+            name: beneficiariesList
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: Image, name: image, widget: image }
+          - label: Annual Highlights
+            name: annualHighlightsList
+            widget: list
+            fields:
+              - { label: Year, name: year, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Text, name: text, widget: text }
+          - { label: CTA Heading, name: ctaHeading, widget: string }
+          - { label: CTA Eyebrow, name: ctaEyebrow, widget: string }
+      - label: Contact
+        name: contact
+        file: content/contact.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string, required: false }
+          - { label: Page Description, name: pageDescription, widget: text, required: false }
+          - { label: OG Image, name: ogImage, widget: image, required: false }
+          - { label: Body, name: body, widget: markdown, required: false }
 
   # ── SITE SETTINGS ─────────────────────────────────────────
   - name: settings

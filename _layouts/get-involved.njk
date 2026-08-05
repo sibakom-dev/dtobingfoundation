@@ -1,0 +1,44 @@
+---
+layout: base.njk
+---
+
+<div class="page-hero--simple" style="background: var(--color-navy);">
+  <div class="container" style="padding-block: var(--space-xl);">
+    <h1 class="page-hero__title">{{ title }}</h1>
+    <p class="page-hero__subtitle">{{ subtitle }}</p>
+  </div>
+</div>
+
+<div class="get-involved-page container">
+  <div class="involved-grid">
+    {% for item in opportunities %}
+    <div class="involved-card" id="{{ item.id }}">
+      <div class="involved-card__icon">
+        {% if item.id == 'donate' %}
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        {% elif item.id == 'volunteer' %}
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        {% elif item.id == 'partnership' %}
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        {% elif item.id == 'donate-goods' %}
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        {% else %}
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+        {% endif %}
+      </div>
+      <h2 class="involved-card__title">{{ item.title }}</h2>
+      <p class="involved-card__text">{{ item.description }}</p>
+      
+      {% if item.buttonLink == 'site.donateUrl' %}
+      <a class="btn btn--navy" href="{{ site.donateUrl }}" rel="noopener" target="_blank">{{ item.buttonText }} <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      {% else %}
+      <a class="btn btn--navy" href="{{ item.buttonLink }}">{{ item.buttonText }} <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% set heading = ctaHeading %}
+{% set eyebrow = ctaEyebrow %}
+{% include "cta-banner.njk" %}
