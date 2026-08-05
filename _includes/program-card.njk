@@ -1,0 +1,20 @@
+<article class="program-card">
+  <div class="program-card__header">
+    {% if logoSrc %}
+    <img class="program-card__logo" src="{{ logoSrc }}" alt="{{ title }} logo" width="48" height="48" loading="lazy">
+    {% endif %}
+    <div>
+      <h3 class="program-card__title">{{ title }}</h3>
+      <p class="program-card__subtitle">{{ subtitle }}</p>
+    </div>
+  </div>
+  <div class="program-card__image">
+    <img src="{{ imageSrc }}" alt="{{ title }}" loading="lazy">
+  </div>
+  <div class="program-card__body">
+    <p>{{ summary }}</p>
+  </div>
+  <div class="program-card__footer">
+    <a class="program-card__link" href="{{ url }}">{{ linkLabel or "Learn More" }} <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+  </div>
+</article>

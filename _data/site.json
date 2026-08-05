@@ -1,0 +1,47 @@
+{
+  "siteName": "The Darius Tobing Foundation",
+  "siteUrl": "https://dtobingfoundation.org",
+  "siteDescription": "A Jakarta-based non-profit dedicated to cultural preservation, community literacy, animal welfare, and ethical commerce.",
+  "logo": "/media/YDT_Full_Logo_English_Color_On_White_5x-scaled.png",
+  "logoMark": "/media/YDT_Logomark_Original.svg",
+  "address": "Jakarta, Indonesia",
+  "phone": "+62 21 000 0000",
+  "email": "info@dtobingfoundation.org",
+  "donateUrl": "https://donate.dtobingfoundation.org",
+  "socialLinks": {
+    "instagram": "https://instagram.com/dtobingfoundation",
+    "facebook": "https://facebook.com/dtobingfoundation",
+    "youtube": "https://youtube.com/@dtobingfoundation",
+    "email": "mailto:info@dtobingfoundation.org"
+  },
+  "seoDefaults": {
+    "title": "The Darius Tobing Foundation",
+    "description": "A Jakarta-based non-profit dedicated to cultural preservation, community literacy, animal welfare, and ethical commerce.",
+    "image": "/media/background_website_2mb.png"
+  },
+  "heroImage": "/media/background_website_2mb.png",
+  "heroSlides": [
+    {
+      "image": "/media/Prima-Unggul-2.jpg",
+      "heading": "Preserving Heritage.<br>Empowering Lives.",
+      "subheading": "We work with rural artisans, support communities, and care for animals, creating a more compassionate and sustainable Indonesia."
+    },
+    {
+      "image": "/media/Urip-Gawe-Urup-500px.jpg",
+      "heading": "In Life,<br>Do Good Deeds.",
+      "subheading": "Urip Gawe Urup supports education, community welfare, and animal care across Indonesia."
+    },
+    {
+      "image": "/media/Hati-Suci-Orphanage.jpg",
+      "heading": "Every Child<br>Deserves a Future.",
+      "subheading": "Through direct philanthropy we support orphanages, fund scholarships, and build community libraries."
+    }
+  ],
+  "impactStats": [
+    { "number": "30+", "label": "Artisan Markets Organized" },
+    { "number": "Hundreds", "label": "of Artisans Empowered" },
+    { "number": "2", "label": "Community Libraries Established" },
+    { "number": "Scholarships", "label": "for Higher Education Provided" },
+    { "number": "Countless", "label": "Animals Helped and Sheltered" }
+  ]
+}

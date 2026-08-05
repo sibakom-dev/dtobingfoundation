@@ -1,0 +1,11 @@
+<div class="stat">
+  {% if iconSrc %}
+  <div class="stat__icon" aria-hidden="true">
+    <img src="{{ iconSrc }}" alt="" width="40" height="40" loading="lazy">
+  </div>
+  {% endif %}
+  <div class="stat__body">
+    <span class="stat__number">{{ number }}</span>
+    <span class="stat__label">{{ label }}</span>
+  </div>
+</div>

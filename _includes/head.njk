@@ -1,0 +1,57 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="{{ pageDescription or site.seoDefaults.description }}">
+<title>{% if title %}{{ title }} – {{ site.siteName }}{% else %}{{ site.siteName }}{% endif %}</title>
+
+{# Canonical #}
+<link rel="canonical" href="{{ site.siteUrl }}{{ page.url }}">
+
+{# Open Graph #}
+<meta property="og:type" content="{{ ogType or 'website' }}">
+<meta property="og:title" content="{% if title %}{{ title }} – {{ site.siteName }}{% else %}{{ site.siteName }}{% endif %}">
+<meta property="og:description" content="{{ pageDescription or site.seoDefaults.description }}">
+<meta property="og:image" content="{{ site.siteUrl }}{{ ogImage or site.seoDefaults.image }}">
+<meta property="og:url" content="{{ site.siteUrl }}{{ page.url }}">
+
+{# Twitter Card #}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{% if title %}{{ title }} – {{ site.siteName }}{% else %}{{ site.siteName }}{% endif %}">
+<meta name="twitter:description" content="{{ pageDescription or site.seoDefaults.description }}">
+<meta name="twitter:image" content="{{ site.siteUrl }}{{ ogImage or site.seoDefaults.image }}">
+
+{# Fonts #}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+{# Styles #}
+<link rel="stylesheet" href="/assets/css/main.css">
+
+{# RSS Feed #}
+<link rel="alternate" type="application/rss+xml" title="{{ site.siteName }} – Stories" href="/stories/feed.xml">
+
+{# Favicon #}
+<link rel="icon" type="image/svg+xml" href="/media/YDT_Logomark_Original.svg">
+
+{# Schema.org Organization #}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NGO",
+  "name": "{{ site.siteName }}",
+  "url": "{{ site.siteUrl }}",
+  "logo": "{{ site.siteUrl }}{{ site.logo }}",
+  "description": "{{ site.seoDefaults.description }}",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Jakarta",
+    "addressCountry": "ID"
+  },
+  "email": "{{ site.email }}",
+  "sameAs": [
+    "{{ site.socialLinks.instagram }}",
+    "{{ site.socialLinks.facebook }}",
+    "{{ site.socialLinks.youtube }}"
+  ]
+}
+</script>

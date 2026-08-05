@@ -1,0 +1,14 @@
+[
+  { "label": "About", "url": "/about/" },
+  { "label": "Programs", "url": "/programs/" },
+  { "label": "Impact", "url": "/impact/" },
+  { "label": "Events", "url": "/events/" },
+  { "label": "News & Stories", "url": "/stories/" },
+  { "label": "Get Involved", "url": "/get-involved/", "children": [
+    { "label": "Donate", "url": "/get-involved/#donate" },
+    { "label": "Volunteer", "url": "/get-involved/#volunteer" },
+    { "label": "Corporate Partnership", "url": "/get-involved/#partnership" },
+    { "label": "Donate Goods", "url": "/get-involved/#donate-goods" }
+  ]},
+  { "label": "Contact", "url": "/contact/" }
+]

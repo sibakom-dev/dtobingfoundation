@@ -1,0 +1,26 @@
+---
+permalink: /stories/feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.siteName }} - Stories</title>
+    <link>{{ site.siteUrl }}/stories/</link>
+    <atom:link href="{{ site.siteUrl }}/stories/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Stories of impact from {{ site.siteName }}</description>
+    <language>en</language>
+    {%- for story in collections.stories | limit(20) %}
+    <item>
+      <title>{{ story.data.title }}</title>
+      <link>{{ site.siteUrl }}{{ story.url }}</link>
+      <guid>{{ site.siteUrl }}{{ story.url }}</guid>
+      <pubDate>{{ story.date | isoDate }}</pubDate>
+      <description>{{ story.data.excerpt }}</description>
+      {%- if story.data.category %}
+      <category>{{ story.data.category }}</category>
+      {%- endif %}
+    </item>
+    {%- endfor %}
+  </channel>
+</rss>

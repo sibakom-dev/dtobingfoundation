@@ -1,0 +1,43 @@
+<section class="hero-carousel" aria-label="Homepage hero" aria-roledescription="carousel" id="hero-carousel">
+  <div class="hero-carousel__track" id="carousel-track" aria-live="polite">
+    {% for slide in site.heroSlides %}
+    <div class="hero-carousel__slide"
+         style="background-image: url('{{ slide.image }}')"
+         role="group"
+         aria-roledescription="slide"
+         aria-label="Slide {{ loop.index }} of {{ site.heroSlides | length }}"
+         {% if loop.first %}aria-current="true"{% endif %}>
+      <div class="hero-carousel__content container">
+        <h1 class="hero-carousel__heading">{{ slide.heading | safe }}</h1>
+        <p class="hero-carousel__subheading">{{ slide.subheading }}</p>
+        <div class="hero-carousel__actions">
+          <a class="btn btn--outline-light" href="/programs/">Our Programs</a>
+          <a class="btn btn--outline-light" href="https://tokopedia.com/paisleythings" rel="noopener" target="_blank">Shop Ethical Products</a>
+          <a class="btn btn--gold" href="{{ site.donateUrl }}" rel="noopener">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            Donate Now
+          </a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="hero-carousel__controls" aria-label="Carousel controls">
+    <button class="hero-carousel__btn" id="carousel-prev" aria-label="Previous slide">
+      <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <div class="hero-carousel__dots" role="tablist" aria-label="Slides">
+      {% for slide in site.heroSlides %}
+      <button class="hero-carousel__dot{% if loop.first %} hero-carousel__dot--active{% endif %}"
+              role="tab"
+              aria-selected="{{ 'true' if loop.first else 'false' }}"
+              aria-label="Go to slide {{ loop.index }}"
+              data-index="{{ loop.index0 }}"></button>
+      {% endfor %}
+    </div>
+    <button class="hero-carousel__btn" id="carousel-next" aria-label="Next slide">
+      <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+  </div>
+</section>

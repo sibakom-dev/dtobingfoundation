@@ -1,0 +1,111 @@
+---
+layout: base.njk
+---
+<article class="program-page" itemscope itemtype="https://schema.org/Organization">
+
+  {# Hero #}
+  <section class="hero" aria-label="{{ title }} hero"
+    {% if heroImage %}style="--hero-bg: url('{{ heroImage }}')"{% endif %}>
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__content container">
+      {% if programLogo %}
+      <img class="program-page__logo" src="{{ programLogo }}" alt="{{ title }} logo" width="80" height="80" loading="eager">
+      {% endif %}
+      <h1 class="hero__heading" itemprop="name">{{ title }}</h1>
+      {% if tagline %}<p class="hero__subheading">{{ tagline }}</p>{% endif %}
+    </div>
+  </section>
+
+  {# Overview #}
+  <section class="program-section program-section--overview container" aria-labelledby="prog-overview">
+    <h2 id="prog-overview" class="section-header__heading">Overview</h2>
+    <div class="rich-text" itemprop="description">
+      {{ content | safe }}
+    </div>
+  </section>
+
+  {# Objectives #}
+  {% if objectives %}
+  <section class="program-section program-section--objectives" aria-labelledby="prog-objectives">
+    <div class="container">
+      <h2 id="prog-objectives" class="section-header__heading">Objectives</h2>
+      <ul class="objectives-list">
+        {% for obj in objectives %}
+        <li>{{ obj }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+  {% endif %}
+
+  {# Activities #}
+  {% if activities %}
+  <section class="program-section program-section--activities container" aria-labelledby="prog-activities">
+    <h2 id="prog-activities" class="section-header__heading">Activities</h2>
+    <div class="activities-grid">
+      {% for act in activities %}
+      <div class="activity-card">
+        {% if act.image %}<img src="{{ act.image }}" alt="{{ act.title }}" loading="lazy">{% endif %}
+        <h3>{{ act.title }}</h3>
+        <p>{{ act.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {# Gallery #}
+  {% if gallery %}
+  <section class="program-section program-section--gallery" aria-labelledby="prog-gallery">
+    <div class="container">
+      <h2 id="prog-gallery" class="section-header__heading">Gallery</h2>
+      <div class="gallery-grid">
+        {% for img in gallery %}
+        <figure class="gallery-item">
+          <img src="{{ img.src }}" alt="{{ img.alt or title }}" loading="lazy">
+          {% if img.caption %}<figcaption>{{ img.caption }}</figcaption>{% endif %}
+        </figure>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  {# Related Stories #}
+  {% set programStories = [] %}
+  {% for story in collections.stories %}
+    {% if story.data.program == programKey %}
+      {% set programStories = (programStories.push(story), programStories) %}
+    {% endif %}
+  {% endfor %}
+  {% if programStories.length %}
+  <section class="program-section container" aria-labelledby="prog-stories">
+    <h2 id="prog-stories" class="section-header__heading">Related Stories</h2>
+    <div class="story-grid">
+      {% for story in programStories | limit(3) %}
+      <article class="story-card">
+        {% if story.data.coverImage %}
+        <a class="story-card__image" href="{{ story.url }}" tabindex="-1" aria-hidden="true">
+          <img src="{{ story.data.coverImage }}" alt="{{ story.data.title }}" loading="lazy">
+        </a>
+        {% endif %}
+        <div class="story-card__body">
+          {% if story.data.category %}<p class="story-card__category">{{ story.data.category }}</p>{% endif %}
+          <h3 class="story-card__title"><a href="{{ story.url }}">{{ story.data.title }}</a></h3>
+          {% if story.data.excerpt %}<p class="story-card__excerpt">{{ story.data.excerpt }}</p>{% endif %}
+          <footer class="story-card__meta">
+            {% if story.data.author %}<span>{{ story.data.author }}</span>{% endif %}
+            <time datetime="{{ story.date | isoDate }}">{{ story.date | formatDate }}</time>
+          </footer>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {# CTA #}
+  {% set heading = "Support " + title %}
+  {% include "cta-banner.njk" %}
+
+</article>

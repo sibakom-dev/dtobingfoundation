@@ -1,0 +1,22 @@
+---
+layout: base.njk
+---
+{% if heroHeading %}
+{% set heading = heroHeading %}
+{% set subheading = heroSubheading %}
+{% set heroImage = heroImg or site.heroImage %}
+{% set ctaPrimary = heroCta %}
+{% set ctaPrimaryUrl = heroCtaUrl %}
+{% include "hero.njk" %}
+{% else %}
+<div class="page-hero page-hero--simple">
+  <div class="container">
+    <h1 class="page-hero__title">{{ title }}</h1>
+    {% if subtitle %}<p class="page-hero__subtitle">{{ subtitle }}</p>{% endif %}
+  </div>
+</div>
+{% endif %}
+
+<article class="page-content container rich-text">
+  {{ content | safe }}
+</article>

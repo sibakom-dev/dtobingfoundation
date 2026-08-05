@@ -1,0 +1,41 @@
+<header class="site-header" role="banner">
+  <nav class="navbar container" aria-label="Main navigation">
+    <a class="navbar__logo" href="/" aria-label="{{ site.siteName }} Home">
+      <img src="{{ site.logo }}" alt="{{ site.siteName }}" width="200" height="60" loading="eager">
+    </a>
+
+    <button class="navbar__toggle" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+    </button>
+
+    <ul class="navbar__menu" id="main-menu" role="list">
+      {% for item in navigation %}
+        {% if item.children %}
+          <li class="navbar__item navbar__item--has-children">
+            <button class="navbar__link navbar__link--dropdown" aria-expanded="false" aria-haspopup="true">
+              {{ item.label }}
+              <svg aria-hidden="true" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <ul class="navbar__dropdown" role="list">
+              {% for child in item.children %}
+                <li><a class="navbar__dropdown-link" href="{{ child.url }}">{{ child.label }}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+        {% else %}
+          <li class="navbar__item">
+            <a class="navbar__link{% if page.url == item.url %} navbar__link--active{% endif %}" href="{{ item.url }}">{{ item.label }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+      <li class="navbar__item">
+        <a class="btn btn--gold navbar__cta" href="{{ site.donateUrl }}" rel="noopener">
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          Donate
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>

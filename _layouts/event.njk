@@ -1,0 +1,96 @@
+---
+layout: base.njk
+ogType: event
+---
+<article class="event-page" itemscope itemtype="https://schema.org/Event">
+
+  <header class="event-page__header">
+    {% if heroImage %}
+    <div class="event-page__cover">
+      <img src="{{ heroImage }}" alt="{{ title }}" loading="eager">
+    </div>
+    {% endif %}
+    <div class="container event-page__header-content">
+      <p class="event-page__label">Event</p>
+      <h1 class="event-page__title" itemprop="name">{{ title }}</h1>
+      {% if subtitle %}<p class="event-page__subtitle">{{ subtitle }}</p>{% endif %}
+      <div class="event-page__details">
+        {% if eventDate %}
+        <p class="event-detail">
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <time itemprop="startDate" datetime="{{ eventDate | isoDate }}">{{ eventDate | formatDate }}</time>
+          {% if eventEndDate %} to <time itemprop="endDate" datetime="{{ eventEndDate | isoDate }}">{{ eventEndDate | formatDate }}</time>{% endif %}
+        </p>
+        {% endif %}
+        {% if eventTime %}
+        <p class="event-detail">
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          {{ eventTime }}
+        </p>
+        {% endif %}
+        {% if location %}
+        <p class="event-detail" itemprop="location">
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          {{ location }}
+        </p>
+        {% endif %}
+      </div>
+      {% if features %}
+      <ul class="event-page__features">
+        {% for feat in features %}
+        <li>
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          {{ feat }}
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      {% if registrationLink %}
+      <a class="btn btn--gold" href="{{ registrationLink }}" rel="noopener" target="_blank">
+        View Event Details <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="event-page__body container rich-text" itemprop="description">
+    {{ content | safe }}
+  </div>
+
+  {% if gallery %}
+  <section class="container" aria-labelledby="event-gallery-heading">
+    <h2 id="event-gallery-heading" class="section-header__heading">Gallery</h2>
+    <div class="gallery-grid">
+      {% for img in gallery %}
+      <figure class="gallery-item">
+        <img src="{{ img.src }}" alt="{{ img.alt or title }}" loading="lazy">
+        {% if img.caption %}<figcaption>{{ img.caption }}</figcaption>{% endif %}
+      </figure>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <footer class="event-page__footer container">
+    <a class="btn btn--outline-navy" href="/events/"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> All Events</a>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "{{ title }}",
+    "startDate": "{{ eventDate | isoDate }}",
+    "location": {
+      "@type": "Place",
+      "name": "{{ location }}"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "{{ site.siteName }}",
+      "url": "{{ site.siteUrl }}"
+    },
+    "image": "{{ site.siteUrl }}{{ heroImage or site.seoDefaults.image }}"
+  }
+  </script>
+</article>

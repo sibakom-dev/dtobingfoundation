@@ -1,0 +1,20 @@
+<article class="story-card">
+  {% if coverImage %}
+  <a class="story-card__image" href="{{ url }}" tabindex="-1" aria-hidden="true">
+    <img src="{{ coverImage }}" alt="{{ title }}" loading="lazy">
+  </a>
+  {% endif %}
+  <div class="story-card__body">
+    {% if category %}
+    <p class="story-card__category">{{ category }}</p>
+    {% endif %}
+    <h3 class="story-card__title"><a href="{{ url }}">{{ title }}</a></h3>
+    {% if excerpt %}<p class="story-card__excerpt">{{ excerpt }}</p>{% endif %}
+    <footer class="story-card__meta">
+      {% if author %}<span>{{ author }}</span>{% endif %}
+      {% if date %}
+        <time datetime="{{ date | isoDate }}">{{ date | formatDate }}</time>
+      {% endif %}
+    </footer>
+  </div>
+</article>
