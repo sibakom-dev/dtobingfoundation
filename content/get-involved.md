@@ -5,11 +5,7 @@ title: Get Involved
 subtitle: "Every act of support, big or small, creates ripples of change."
 pageDescription: "Donate, volunteer, partner, or donate goods. There are many ways to support The Darius Tobing Foundation."
 opportunities:
-  - id: donate
-    title: Donate
-    description: Your financial contribution directly funds artisan livelihoods, community scholarships, animal welfare, and library operations. Every rupiah makes a difference.
-    buttonText: Donate Now
-    buttonLink: site.donateUrl
+
   - id: volunteer
     title: Volunteer
     description: Give your time and skills. Whether you're a designer, educator, event organizer, or animal lover, we have meaningful volunteer opportunities for you.
