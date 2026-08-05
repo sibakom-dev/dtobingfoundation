@@ -1,0 +1,607 @@
+For a small-to-medium nonprofit, I would keep the site intentionally lean. The goal is to make it easy for the foundation staff to update without needing a developer. Everything that changes frequently should come from the CMS, while evergreen content remains as Markdown pages.
+
+---
+
+# Project Brief
+
+## Project
+
+Rebuild **The Darius Tobing Foundation** website using:
+
+* **Eleventy (11ty)** for static site generation
+* **Sveltia CMS** for content management
+* **Nunjucks** templates
+* Responsive, accessible design
+* Minimal JavaScript
+* Optimized for SEO and performance
+
+---
+
+# Goals
+
+The website should communicate:
+
+* Who the foundation is
+* What it does
+* Its three program pillars
+* Upcoming events
+* Stories and impact
+* How people can help
+
+The CMS should be simple enough for non-technical staff.
+
+---
+
+# Sitemap
+
+```
+Home
+
+About
+
+Programs
+    Paisley Things
+    Lokal Indonesia
+    Urip Gawe Urup
+
+Impact
+
+Events
+
+Stories
+
+Get Involved
+
+Contact
+```
+
+Only **8 pages**.
+
+---
+
+# Navigation
+
+```
+Logo
+
+About
+
+Programs
+
+Impact
+
+Events
+
+Stories
+
+Get Involved
+
+Contact
+
+Donate (CTA Button)
+```
+
+---
+
+# Footer
+
+```
+About
+
+Programs
+
+Events
+
+Stories
+
+Contact
+
+Social Media
+
+Newsletter
+
+Copyright
+```
+
+---
+
+# CMS Collections
+
+Only use four collections.
+
+```
+Stories
+
+Events
+
+Programs
+
+Site Settings
+```
+
+Everything else should be regular pages.
+
+---
+
+# Folder Structure
+
+```
+content/
+
+    about.md
+
+    impact.md
+
+    contact.md
+
+    get-involved.md
+
+    home.md
+
+    programs/
+
+        paisley-things.md
+
+        lokal-indonesia.md
+
+        urip-gawe-urup.md
+
+    stories/
+
+    events/
+```
+
+---
+
+# Site Settings
+
+One global configuration.
+
+```
+Foundation Name
+
+Logo
+
+Address
+
+Phone
+
+Email
+
+Social Links
+
+Newsletter
+
+SEO Defaults
+
+Hero Image
+
+Donation URL
+```
+
+---
+
+# Home Page
+
+## Hero
+
+Use supplied children image.
+
+Large heading
+
+```
+Preserving Heritage.
+Empowering Lives.
+```
+
+Short description
+
+Primary CTA
+
+```
+Donate
+```
+
+Secondary CTA
+
+```
+Explore Programs
+```
+
+---
+
+## Mission
+
+Short introduction.
+
+---
+
+## Three Pillars
+
+Three feature cards.
+
+* Paisley Things
+* Lokal Indonesia
+* Urip Gawe Urup
+
+Each card:
+
+* image
+* title
+* summary
+* button
+
+---
+
+## Impact Numbers
+
+Editable stats.
+
+Example
+
+```
+30+
+
+Artisan Markets
+```
+
+```
+2
+
+Community Libraries
+```
+
+```
+Hundreds
+
+Artisans Supported
+```
+
+---
+
+## Upcoming Event
+
+Automatically display the next upcoming event.
+
+Button:
+
+```
+View Event
+```
+
+---
+
+## Latest Stories
+
+Display latest three articles.
+
+---
+
+## CTA
+
+Large banner
+
+```
+Together, we can create lasting impact.
+```
+
+Buttons
+
+* Donate
+* Volunteer
+
+---
+
+# About
+
+Content sections
+
+```
+Our Story
+
+Vision
+
+Mission
+
+Values
+
+Founders
+
+Partners
+```
+
+Single editable page.
+
+---
+
+# Programs
+
+Landing page introducing the three pillars.
+
+Each pillar links to its own page.
+
+---
+
+## Individual Program Page
+
+Shared layout.
+
+```
+Hero
+
+Overview
+
+Objectives
+
+Activities
+
+Gallery
+
+Related Stories
+
+CTA
+```
+
+---
+
+# Impact
+
+Single page.
+
+Contains
+
+* statistics
+* testimonials
+* beneficiaries
+* annual highlights
+
+No complicated filtering.
+
+---
+
+# Events
+
+Simple listing.
+
+Each event contains
+
+```
+Title
+
+Date
+
+Location
+
+Hero Image
+
+Summary
+
+Body
+
+Registration Link
+
+Gallery
+```
+
+Automatically sort by date.
+
+---
+
+# Stories
+
+Simple blog.
+
+Fields
+
+```
+Title
+
+Cover Image
+
+Excerpt
+
+Body
+
+Author
+
+Publish Date
+
+Category
+```
+
+Optional categories:
+
+* Community
+* Artisan
+* Animal Welfare
+* Events
+
+---
+
+# Get Involved
+
+Single page.
+
+Sections
+
+```
+Donate
+
+Volunteer
+
+Corporate Partnership
+
+Donate Goods
+```
+
+Each section links externally if needed.
+
+---
+
+# Contact
+
+Contains
+
+* Contact Form
+* Address
+* Google Map embed
+* Opening Hours
+* Social Media
+
+---
+
+# Components
+
+Reusable components only.
+
+```
+Navbar
+
+Footer
+
+Hero
+
+Button
+
+Card
+
+Stat
+
+Section Header
+
+CTA Banner
+
+Event Card
+
+Story Card
+
+Gallery
+
+Rich Text
+```
+
+---
+
+# Sveltia CMS Collections
+
+```yaml
+collections:
+
+  - Stories
+
+  - Events
+
+  - Programs
+
+  - Site Settings
+```
+
+---
+
+# Media
+
+```
+/uploads
+
+    stories
+
+    events
+
+    programs
+
+    site
+```
+
+---
+
+# Design Direction
+
+Based on the provided mockup.
+
+**Color Palette**
+
+```
+Cream
+#F8F5EF
+
+Navy
+#213A63
+
+Forest Green
+#355C43
+
+Warm Gold
+#B88746
+
+Light Beige
+#EFE7D9
+```
+
+**Typography**
+
+* Headings: Cormorant Garamond
+* Body: Inter
+
+Style keywords:
+
+* Elegant
+* Warm
+* Human-centered
+* Editorial
+* Spacious
+* Timeless
+* Premium but approachable
+
+---
+
+# Technical Requirements
+
+* Eleventy v3
+* Nunjucks templates
+* Sveltia CMS
+* Markdown content
+* Image optimization (`@11ty/eleventy-img`)
+* Responsive images with lazy loading
+* Automatic Open Graph image generation (fallback to site default)
+* Sitemap generation
+* RSS feed for Stories
+* Robots.txt
+* Canonical URLs
+* Schema.org metadata for Organization, Event, and Article
+* WCAG AA accessibility
+* Lighthouse targets: Performance ≥95, Accessibility ≥95, Best Practices ≥95, SEO ≥95
+
+---
+
+# Deliverables
+
+```
+/src
+/content
+/uploads
+/_includes
+/_layouts
+/_data
+/assets
+
+Home
+About
+Programs
+Program Template
+Impact
+Events Listing
+Event Template
+Stories Listing
+Story Template
+Get Involved
+Contact
+
+Responsive navigation
+Responsive footer
+
+Sveltia CMS configuration
+
+Deployment-ready build
+```
+
+This scope keeps the site maintainable by using **only four dynamic collections** (Stories, Events, Programs, and Site Settings), while all other content lives in simple Markdown pages. It strikes a good balance between flexibility and ease of content management for a nonprofit with a small editorial team.
