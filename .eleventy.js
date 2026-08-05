@@ -87,7 +87,6 @@ module.exports = function (eleventyConfig) {
 
   // ── Config ────────────────────────────────────────────────────
   return {
-    pathPrefix: "/dtobingfoundation/",
     dir: {
       input: ".",
       includes: "_includes",
