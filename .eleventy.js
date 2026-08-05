@@ -1,4 +1,4 @@
-const { EleventyRenderPlugin } = require("@11ty/eleventy");
+const { EleventyRenderPlugin, HtmlBasePlugin } = require("@11ty/eleventy");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const Image = require("@11ty/eleventy-img");
 const path = require("path");
@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
 
   // ── Plugins ──────────────────────────────────────────────────
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(HtmlBasePlugin);
 
   // ── Passthrough copies ───────────────────────────────────────
   eleventyConfig.addPassthroughCopy("assets");
@@ -86,6 +87,7 @@ module.exports = function (eleventyConfig) {
 
   // ── Config ────────────────────────────────────────────────────
   return {
+    pathPrefix: "/dtobingfoundation/",
     dir: {
       input: ".",
       includes: "_includes",
