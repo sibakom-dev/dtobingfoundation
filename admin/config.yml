@@ -71,95 +71,49 @@ collections:
       - { label: OG Image, name: ogImage, widget: image, required: false }
       - { label: Layout, name: layout, widget: hidden, default: event.njk }
 
-  # ── PROGRAMS ───────────────────────────────────────────────
-  - name: programs
-    label: Programs
+  # ── URIP GAWE URUP (Formerly Programs) ─────────────────────
+  - name: urip-gawe-urup
+    label: Urip Gawe Urup
     label_singular: Program
-    files:
-      - label: Paisley Things
-        name: paisley-things
-        file: content/programs/paisley-things.md
+    folder: content/programs
+    create: true
+    slug: "{{slug}}"
+    preview_path: "programs/{{slug}}/"
+    filter:
+      field: layout
+      value: program.njk
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Permalink, name: permalink, widget: string, required: false }
+      - { label: Tagline, name: tagline, widget: string, required: false }
+      - { label: Summary, name: summary, widget: text, required: false }
+      - { label: Hero Image, name: heroImage, widget: image, required: false,
+          media_folder: /uploads/programs, public_folder: /uploads/programs }
+      - { label: Program Logo, name: programLogo, widget: image, required: false,
+          media_folder: /uploads/programs, public_folder: /uploads/programs }
+      - { label: Program Key, name: programKey, widget: string, required: false }
+      - { label: Order, name: order, widget: number, required: false }
+      - { label: Page Description, name: pageDescription, widget: text, required: false }
+      - { label: OG Image, name: ogImage, widget: image, required: false }
+      - { label: Objectives, name: objectives, widget: list, required: false,
+          field: { label: Objective, name: item, widget: string } }
+      - label: Activities
+        name: activities
+        widget: list
+        required: false
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: Tagline, name: tagline, widget: string }
-          - { label: Summary, name: summary, widget: text }
-          - { label: Hero Image, name: heroImage, widget: image, required: false,
-              media_folder: /uploads/programs, public_folder: /uploads/programs }
-          - { label: Objectives, name: objectives, widget: list, required: false,
-              field: { label: Objective, name: item, widget: string } }
-          - label: Activities
-            name: activities
-            widget: list
-            required: false
-            fields:
-              - { label: Title, name: title, widget: string }
-              - { label: Description, name: description, widget: text }
-              - { label: Image, name: image, widget: image, required: false }
-          - label: Gallery
-            name: gallery
-            widget: list
-            required: false
-            fields:
-              - { label: Image, name: src, widget: image }
-              - { label: Alt Text, name: alt, widget: string, required: false }
-          - { label: Body, name: body, widget: markdown }
-          - { label: Layout, name: layout, widget: hidden, default: program.njk }
-      - label: Lokal Indonesia
-        name: lokal-indonesia
-        file: content/programs/lokal-indonesia.md
+          - { label: Description, name: description, widget: text }
+          - { label: Image, name: image, widget: image, required: false }
+      - label: Gallery
+        name: gallery
+        widget: list
+        required: false
         fields:
-          - { label: Title, name: title, widget: string }
-          - { label: Tagline, name: tagline, widget: string }
-          - { label: Summary, name: summary, widget: text }
-          - { label: Hero Image, name: heroImage, widget: image, required: false,
-              media_folder: /uploads/programs, public_folder: /uploads/programs }
-          - { label: Objectives, name: objectives, widget: list, required: false,
-              field: { label: Objective, name: item, widget: string } }
-          - label: Activities
-            name: activities
-            widget: list
-            required: false
-            fields:
-              - { label: Title, name: title, widget: string }
-              - { label: Description, name: description, widget: text }
-              - { label: Image, name: image, widget: image, required: false }
-          - label: Gallery
-            name: gallery
-            widget: list
-            required: false
-            fields:
-              - { label: Image, name: src, widget: image }
-              - { label: Alt Text, name: alt, widget: string, required: false }
-          - { label: Body, name: body, widget: markdown }
-          - { label: Layout, name: layout, widget: hidden, default: program.njk }
-      - label: Urip Gawe Urup
-        name: urip-gawe-urup
-        file: content/programs/urip-gawe-urup.md
-        fields:
-          - { label: Title, name: title, widget: string }
-          - { label: Tagline, name: tagline, widget: string }
-          - { label: Summary, name: summary, widget: text }
-          - { label: Hero Image, name: heroImage, widget: image, required: false,
-              media_folder: /uploads/programs, public_folder: /uploads/programs }
-          - { label: Objectives, name: objectives, widget: list, required: false,
-              field: { label: Objective, name: item, widget: string } }
-          - label: Activities
-            name: activities
-            widget: list
-            required: false
-            fields:
-              - { label: Title, name: title, widget: string }
-              - { label: Description, name: description, widget: text }
-              - { label: Image, name: image, widget: image, required: false }
-          - label: Gallery
-            name: gallery
-            widget: list
-            required: false
-            fields:
-              - { label: Image, name: src, widget: image }
-              - { label: Alt Text, name: alt, widget: string, required: false }
-          - { label: Body, name: body, widget: markdown }
-          - { label: Layout, name: layout, widget: hidden, default: program.njk }
+          - { label: Image, name: src, widget: image }
+          - { label: Alt Text, name: alt, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }
+      - { label: Layout, name: layout, widget: hidden, default: program.njk }
 
   # ── PAGES ──────────────────────────────────────────────────
   - name: pages
