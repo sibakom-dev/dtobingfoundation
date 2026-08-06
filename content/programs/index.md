@@ -21,9 +21,7 @@ eleventyExcludeFromCollections: true
       {% for program in collections.programs %}
       <div class="program-card">
         <div class="program-card__header">
-          {% if program.data.programLogo %}
-          <img class="program-card__logo" src="{{ program.data.programLogo }}" alt="{{ program.data.title }} logo" width="48" height="48" loading="lazy">
-          {% endif %}
+
           <div>
             <h2 class="program-card__title">{{ program.data.title }}</h2>
             <p class="program-card__subtitle">{{ program.data.tagline }}</p>

@@ -86,8 +86,6 @@ collections:
       - { label: Summary, name: summary, widget: text, required: false }
       - { label: Hero Image, name: heroImage, widget: image, required: false,
           media_folder: /uploads/programs, public_folder: /uploads/programs }
-      - { label: Program Logo, name: programLogo, widget: image, required: false,
-          media_folder: /uploads/programs, public_folder: /uploads/programs }
       - { label: Program Key, name: programKey, widget: string, required: false }
       - { label: Order, name: order, widget: number, required: false }
       - { label: Page Description, name: pageDescription, widget: text, required: false }

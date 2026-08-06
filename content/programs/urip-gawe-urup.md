@@ -3,7 +3,7 @@ title: Program 3
 tagline: Direct Social Philanthropy
 summary: '"In life, do good deeds." Supporting education, community aid, and animal welfare for a better tomorrow.'
 heroImage: /media/Urip-Gawe-Urup-HERO-IMAGE.png
-programLogo: /media/DTF-Logo-urip-Gawe-Urup-500px.png
+
 programKey: urip-gawe-urup
 order: 3
 pageDescription: Urip Gawe Urup, direct social philanthropy supporting education, community welfare, and animal care in Indonesia.

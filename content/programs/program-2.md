@@ -3,7 +3,7 @@ title: Program 2
 tagline: Marketplace Platform
 summary: Curated artisan markets connecting Indonesia's best crafters with conscious urban consumers.
 heroImage: /media/Lokal-Indonesia-HERO-IMAGE.png
-programLogo: /media/DTF-Logo-Lokal-Indonesia-500px.png
+
 programKey: lokal-indonesia
 order: 2
 pageDescription: Lokal Indonesia organizes artisan markets that celebrate local craftsmanship and connect makers with markets.

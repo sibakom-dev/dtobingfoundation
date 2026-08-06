@@ -23,7 +23,6 @@ layout: base.njk
       {% for program in collections.programs | sort(attribute="data.order") %}
       <div class="program-card">
         <div class="program-card__header">
-          <img class="program-card__logo" src="{{ program.data.programLogo }}" alt="{{ program.data.title }} logo" width="48" height="48" loading="lazy">
           <div>
             <h3 class="program-card__title">{{ program.data.title }}</h3>
             <p class="program-card__subtitle">{{ program.data.tagline }}</p>
