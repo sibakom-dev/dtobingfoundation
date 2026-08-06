@@ -84,7 +84,6 @@ collections:
       value: program.njk
     fields:
       - { label: Title, name: title, widget: string }
-      - { label: Permalink, name: permalink, widget: string, required: false }
       - { label: Tagline, name: tagline, widget: string, required: false }
       - { label: Summary, name: summary, widget: text, required: false }
       - { label: Hero Image, name: heroImage, widget: image, required: false,
