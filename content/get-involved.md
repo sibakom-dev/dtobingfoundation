@@ -2,7 +2,7 @@
 title: Get Involved
 subtitle: Every act of support, big or small, creates ripples of change.
 pageDescription: Donate, volunteer, partner, or donate goods. There are many ways to support The Darius Tobing Foundation.
-ogImage: /media/3.2.jpg
+ogImage: /media/1-e1749109167628.jpg
 opportunities:
   - id: volunteer
     title: Volunteer
