@@ -30,7 +30,7 @@ layout: base.njk
           </div>
         </div>
         <div class="program-card__image">
-          <img src="{{ program.data.gallery[0].src if program.data.gallery else program.data.heroImage }}" alt="{{ program.data.title }}" loading="lazy">
+          <img src="{{ program.data.heroImage }}" alt="{{ program.data.title }}" loading="lazy">
         </div>
         <div class="program-card__body">
           <p>{{ program.data.summary }}</p>
