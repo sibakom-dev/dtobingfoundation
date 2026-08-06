@@ -23,7 +23,6 @@ collections:
     preview_path: "stories/{{slug}}/"
     fields:
       - { label: Title, name: title, widget: string }
-      - { label: Permalink, name: permalink, widget: string, hint: "e.g. /stories/my-story/" }
       - { label: Publish Date, name: date, widget: datetime, time_format: false }
       - { label: Author, name: author, widget: string, required: false }
       - { label: Category, name: category, widget: select, required: false,
@@ -46,7 +45,6 @@ collections:
     preview_path: "events/{{slug}}/"
     fields:
       - { label: Title, name: title, widget: string }
-      - { label: Permalink, name: permalink, widget: string, hint: "e.g. /events/my-event/" }
       - { label: Subtitle, name: subtitle, widget: string, required: false }
       - { label: Event Start Date, name: eventDate, widget: datetime, time_format: false }
       - { label: Event End Date, name: eventEndDate, widget: datetime, time_format: false, required: false }
