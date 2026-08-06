@@ -1,14 +1,12 @@
 ---
-layout: program.njk
-permalink: /programs/lokal-indonesia/
-title: Lokal Indonesia
+title: Program 2
 tagline: Marketplace Platform
-programKey: lokal-indonesia
-programLogo: /media/DTF-Logo-Lokal-Indonesia-500px.png
+summary: Curated artisan markets connecting Indonesia's best crafters with conscious urban consumers.
 heroImage: /media/Lokal-Indonesia-HERO-IMAGE.png
-summary: "Curated artisan markets connecting Indonesia's best crafters with conscious urban consumers."
+programLogo: /media/DTF-Logo-Lokal-Indonesia-500px.png
+programKey: lokal-indonesia
 order: 2
-pageDescription: "Lokal Indonesia organizes artisan markets that celebrate local craftsmanship and connect makers with markets."
+pageDescription: Lokal Indonesia organizes artisan markets that celebrate local craftsmanship and connect makers with markets.
 ogImage: /media/Lokal-Indonesia-HERO-IMAGE.png
 objectives:
   - Organize regular artisan markets in major Indonesian cities
@@ -38,6 +36,8 @@ gallery:
     alt: Artisan market 2024
   - src: /media/202406-2.jpg
     alt: Artisan market June 2024
+layout: program.njk
+permalink: /programs/lokal-indonesia/
 ---
 
 Lokal Indonesia is our curated artisan marketplace, a series of vibrant markets that bring Indonesia's most talented crafters directly to urban consumers who care about where their products come from.

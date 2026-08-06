@@ -1,14 +1,12 @@
 ---
-layout: program.njk
-permalink: /programs/urip-gawe-urup/
-title: Urip Gawe Urup
+title: Program 3
 tagline: Direct Social Philanthropy
-programKey: urip-gawe-urup
-programLogo: /media/DTF-Logo-urip-Gawe-Urup-500px.png
-heroImage: /media/Urip-Gawe-Urup-HERO-IMAGE.png
 summary: '"In life, do good deeds." Supporting education, community aid, and animal welfare for a better tomorrow.'
+heroImage: /media/Urip-Gawe-Urup-HERO-IMAGE.png
+programLogo: /media/DTF-Logo-urip-Gawe-Urup-500px.png
+programKey: urip-gawe-urup
 order: 3
-pageDescription: "Urip Gawe Urup, direct social philanthropy supporting education, community welfare, and animal care in Indonesia."
+pageDescription: Urip Gawe Urup, direct social philanthropy supporting education, community welfare, and animal care in Indonesia.
 ogImage: /media/Urip-Gawe-Urup-HERO-IMAGE.png
 objectives:
   - Provide scholarships for higher education to underprivileged youth
@@ -38,9 +36,11 @@ gallery:
     alt: Community visit
   - src: /media/IMG_8063.jpg
     alt: Volunteers at work
+layout: program.njk
+permalink: /programs/urip-gawe-urup/
 ---
 
-*"Urip Gawe Urup"*, in life, do good deeds. This ancient Javanese principle is the heart of our direct philanthropy work.
+_"Urip Gawe Urup"_, in life, do good deeds. This ancient Javanese principle is the heart of our direct philanthropy work.
 
 We believe that sustainable impact requires more than money, it requires presence, relationships, and consistency. That's why our team doesn't just donate from a distance. We show up. We visit the orphanages we support. We sit with the children in the libraries we fund. We hold the animals we rescue.
 
