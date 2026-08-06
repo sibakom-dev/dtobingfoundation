@@ -15,7 +15,7 @@ eleventyExcludeFromCollections: true
 
 <section style="padding-block: var(--space-xl);">
   <div class="container">
-    <div class="pillars__grid">
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem;">
       {% for event in collections.events %}
       <div class="program-card">
         {% if event.data.heroImage %}
