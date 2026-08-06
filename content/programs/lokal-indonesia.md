@@ -2,7 +2,7 @@
 title: Artisan Empowerment
 tagline: Empowering Local Artisans, Preserving Indonesian Craftsmanship.
 summary: We empower local artisans by transforming creative potential into market-ready products through design collaboration, and access to broader market opportunities via Lokal Indonesia Artisan Market.
-heroImage: /media/Lokal-Indonesia-HERO-IMAGE.png
+heroImage: /media/603999b9-5f37-4f4e-94be-e9a3743c9761.jpg
 objectives:
   - Organize regular artisan markets in major Indonesian cities
   - Provide a platform for small creative businesses to reach new audiences
