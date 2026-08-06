@@ -2,7 +2,6 @@
 title: Our Impact
 subtitle: Real change. Real lives. Measured results.
 pageDescription: 'See the measurable difference The Darius Tobing Foundation makes: statistics, testimonials, beneficiaries, and annual highlights.'
-ogImage: /media/IMG_8014.jpg
 testimonialsList:
   - quote: Being part of Lokal Indonesia changed my business. I now reach customers I never could before, and my crafts are valued as they deserve to be.
     author: Ibu Wati, Batik Artisan, Solo
@@ -13,13 +12,13 @@ testimonialsList:
 beneficiariesList:
   - title: Rural Artisans
     description: Weavers, batik makers, and woodcarvers from across the archipelago.
-    image: /media/53cf9eac-727a-4381-8324-35467cea3de7.jpg
+    image: /media/Paisley.png
   - title: Children & Youth
     description: Orphaned and underprivileged children receiving education and care.
-    image: /media/2.2.jpg
+    image: /media/Hati-Suci-Orphanage.jpg
   - title: Animals in Need
     description: Rescued and sheltered animals receiving veterinary care and rehoming.
-    image: /media/IMG-20220204-WA0029.jpg
+    image: /media/Animal-Shelter.jpg
 annualHighlightsList:
   - year: '2024'
     title: Lokal Indonesia Goes National
