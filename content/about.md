@@ -22,7 +22,7 @@ valuesList:
 foundersList:
   - name: The Darius Tobing Foundation
     role: Jakarta, Indonesia
-    image: /media/IMG_7533.jpg
+    image: /media/YDT_Wordmark_Color_On_White_5x-scaled.png
 partnersList:
   - name: Paisley Things
     image: /media/Logo-Paisley-Things-150px.jpg

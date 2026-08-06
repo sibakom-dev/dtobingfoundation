@@ -165,6 +165,19 @@ collections:
   - name: pages
     label: Pages
     files:
+      - label: Home Page
+        name: home
+        file: content/home.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Page Description, name: pageDescription, widget: text, required: false }
+          - { label: OG Image, name: ogImage, widget: image, required: false }
+          - { label: Mission Strip Text, name: missionStripText, widget: text }
+          - { label: Mission Strip Link Text, name: missionStripLinkText, widget: string }
+          - { label: Mission Strip Link URL, name: missionStripLinkUrl, widget: string }
+          - { label: Programs Heading, name: programsHeading, widget: string, default: "Our Programs" }
+          - { label: CTA Heading, name: ctaHeading, widget: string }
+          - { label: CTA Eyebrow, name: ctaEyebrow, widget: string }
       - label: About Page
         name: about
         file: content/about.md

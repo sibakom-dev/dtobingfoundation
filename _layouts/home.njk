@@ -17,7 +17,7 @@ layout: base.njk
 <section class="pillars" aria-labelledby="pillars-heading">
   <div class="container">
     <div class="section-header section-header--centered">
-      <h2 class="section-header__heading" id="pillars-heading">Our Programs</h2>
+      <h2 class="section-header__heading" id="pillars-heading">{{ programsHeading | default("Our Programs") }}</h2>
     </div>
     <div class="pillars__grid">
       {% for program in collections.programs | sort(attribute="data.order") %}
