@@ -295,9 +295,10 @@ input, textarea, select { font: inherit; }
 }
 .program-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
 .program-card__header {
-  display: flex; align-items: center; gap: .875rem;
+  display: flex; align-items: center; justify-content: center; gap: .875rem;
   padding: 1.25rem 1.25rem .75rem;
   min-height: 115px;
+  text-align: center;
 }
 .program-card__logo { width: 48px; height: 48px; object-fit: contain; flex-shrink: 0; }
 .program-card__title {
