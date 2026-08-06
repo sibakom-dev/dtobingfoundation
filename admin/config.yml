@@ -31,7 +31,7 @@ collections:
           media_folder: /uploads/stories, public_folder: /uploads/stories }
       - { label: Excerpt, name: excerpt, widget: text, required: false }
       - { label: Related Program, name: program, widget: select, required: false,
-          options: [paisley-things, lokal-indonesia, urip-gawe-urup] }
+          options: [animal-welfare, lokal-indonesia, urip-gawe-urup] }
       - { label: Body, name: body, widget: markdown }
       - { label: Layout, name: layout, widget: hidden, default: story.njk }
 

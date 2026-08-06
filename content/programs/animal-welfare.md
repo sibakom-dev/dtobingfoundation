@@ -60,8 +60,8 @@ gallery:
 layout: program.njk
 order: 1
 programLogo: /media/DTF-Logo-Paisley-Things-500px.png
-programKey: paisley-things
-permalink: /programs/paisley-things/
+programKey: animal-welfare
+permalink: /programs/animal-welfare/
 pageDescription: Paisley Things by the Darius Tobing Foundation empowers rural artisans through fair-trade ethical retail.
 ogImage: /media/Paisley-Things-HERO-IMAGE.png
 ---
