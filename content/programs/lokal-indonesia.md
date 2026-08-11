@@ -2,7 +2,11 @@
 title: Artisan Empowerment
 tagline: Empowering Local Artisans, Preserving Indonesian Craftsmanship.
 summary: We empower local artisans by transforming creative potential into market-ready products through design collaboration, and access to broader market opportunities via Lokal Indonesia Artisan Market.
-heroImage: /media/603999b9-5f37-4f4e-94be-e9a3743c9761.jpg
+heroImage: /media/300x500px-Halfpage-Banner.jpg
+programKey: lokal-indonesia
+order: 2
+pageDescription: Lokal Indonesia organizes artisan markets that celebrate local craftsmanship and connect makers with markets.
+ogImage: /media/Lokal-Indonesia-HERO-IMAGE.png
 objectives:
   - Organize regular artisan markets in major Indonesian cities
   - Provide a platform for small creative businesses to reach new audiences
@@ -32,12 +36,8 @@ gallery:
   - src: /media/IMG_8014.jpg
     alt: ''
 layout: program.njk
-order: 2
 programLogo: /media/DTF-Logo-Lokal-Indonesia-500px.png
-programKey: lokal-indonesia
 permalink: /programs/lokal-indonesia/
-pageDescription: Lokal Indonesia organizes artisan markets that celebrate local craftsmanship and connect makers with markets.
-ogImage: /media/Lokal-Indonesia-HERO-IMAGE.png
 ---
 
 ndonesian craftsmanship is a reflection of the nation's rich cultural identity. Through our **Artisan Empowerment** program, DTobing Foundation partners with local artisans to nurture creative potential through collaborative product development and thoughtful design guidance. Together, we transform ideas into meaningful products that preserve authenticity while increasing their value and market readiness.
