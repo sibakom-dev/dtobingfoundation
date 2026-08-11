@@ -3,11 +3,15 @@ title: Animal Welfare
 tagline: Creating a Kinder World for Every Living Being
 summary: Dedicated to creating a kinder world where every animal is valued, protected, and given the opportunity to thrive.
 heroImage: /media/animal shelter .png
+programKey: animal-welfare
+order: 1
+pageDescription: Paisley Things by the Darius Tobing Foundation empowers rural artisans through fair-trade ethical retail.
+ogImage: /media/Paisley-Things-HERO-IMAGE.png
 objectives:
-  - Provide rural artisans with fair and stable income through ethical trade
-  - Preserve traditional Indonesian craft techniques for future generations
-  - Connect Indonesian craftspeople with conscious global consumers
-  - Build sustainable livelihoods that keep villages economically vibrant
+  - Support animal welfare initiatives in underserved communities
+  - Raise awareness of ethical and compassionate animal care
+  - Create sustainable programs that improve animal health and well-being
+  - Promote responsible and humane treatment of animals
 activities:
   - title: Rumah Steril Bibbo
     description: |-
@@ -58,12 +62,7 @@ gallery:
   - src: /media/Animal-Shelter.jpg
     alt: ''
 layout: program.njk
-order: 1
-
-programKey: animal-welfare
 permalink: /programs/animal-welfare/
-pageDescription: Paisley Things by the Darius Tobing Foundation empowers rural artisans through fair-trade ethical retail.
-ogImage: /media/Paisley-Things-HERO-IMAGE.png
 ---
 
 Caring for animal welfare is an essential part of building a more compassionate and sustainable society. Through our **Animal Welfare** program, we strive to foster a harmonious relationship between people, animals, and the environment through meaningful action, education, and responsible care.
