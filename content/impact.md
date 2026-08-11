@@ -2,6 +2,7 @@
 title: Our Impact
 subtitle: Real change. Real lives. Measured results.
 pageDescription: 'See the measurable difference The Darius Tobing Foundation makes: statistics, testimonials, beneficiaries, and annual highlights.'
+ogImage: /media/Untitled-design-20.png
 testimonialsList:
   - quote: Being part of Lokal Indonesia changed my business. I now reach customers I never could before, and my crafts are valued as they deserve to be.
     author: Ibu Wati, Batik Artisan, Solo
