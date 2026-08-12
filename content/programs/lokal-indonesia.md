@@ -40,6 +40,6 @@ programLogo: /media/DTF-Logo-Lokal-Indonesia-500px.png
 permalink: /programs/lokal-indonesia/
 ---
 
-ndonesian craftsmanship is a reflection of the nation's rich cultural identity. Through our **Artisan Empowerment** program, DTobing Foundation partners with local artisans to nurture creative potential through collaborative product development and thoughtful design guidance. Together, we transform ideas into meaningful products that preserve authenticity while increasing their value and market readiness.
+Indonesian craftsmanship is a reflection of the nation's rich cultural identity. Through our **Artisan Empowerment** program, DTobing Foundation partners with local artisans to nurture creative potential through collaborative product development and thoughtful design guidance. Together, we transform ideas into meaningful products that preserve authenticity while increasing their value and market readiness.
 
 To further introduce these creations to the public, selected products may be featured across various promotional and commercial channels, including **Lokal Indonesia Artisan Market**, one of the platforms where Indonesian artisans and creative businesses engage with a wider audience. While such exhibitions provide valuable market exposure, the Foundation's primary mission is to empower artisans by fostering creativity, strengthening craftsmanship, and supporting the long-term sustainability of Indonesia's local creative economy.
