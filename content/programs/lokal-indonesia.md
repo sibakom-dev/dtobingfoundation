@@ -1,5 +1,5 @@
 ---
-title: Paisley Things - Artisan Empowerment
+title: Paisley Things-Artisan Empowerment
 tagline: Empowering Local Artisans, Preserving Indonesian Craftsmanship.
 summary: We empower local artisans by transforming creative potential into market-ready products through design collaboration, and access to broader market opportunities via Lokal Indonesia Artisan Market.
 heroImage: /media/300x500px-Halfpage-Banner.jpg
