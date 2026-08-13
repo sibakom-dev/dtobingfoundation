@@ -22,31 +22,10 @@ activities:
   - title: Supporting 15 Animal Shelters in Need
     description: |-
       We successfully raised funds to support 15 animal shelters in need! Due to the COVID-19 economy, many shelters were struggling to get regular supplies. Our March donation helped provide food, supplies, and more for these rescues.
-
-      Here are the 15 shelters we sent our donations to:
-      1. Rumah Singgah TPP 1.030 dogs/20 cats
-      2. Shelter Pak Johan 625 dogs/150 cats
-      3. Shelter Melati 700 dogs/30 cats
-      4. Natha Satwa Nusantara 100 dogs/250 cats
-      5. Rumah Shambala 75 dogs/40 cats
-      6. Rumah ARAC 135 dogs
-      7. Rainbow Sanctuary Indonesia 130 dogs/30 cats
-      8. Rumah Tapak Kito 150 dogs/70 cats
-      9. Rumah Pom2 150 dogs/30 cats
-      10. Maria Kandang Preman 100 dogs/40 cats
-      11. Bintaro Rescue 150 dogs/50 cats
-      12. Omah Chiraro 50 dogs/200 cats
-      13. Pet at the garage 10 dogs/70 cats
-      14. Marsela Bruno 80 dogs/50 cats
-      15. Salwaa Inuy 20 dogs/40 cats
-
       These donations means a lot to these shelter, and we can't thank you enough for the amazing support we've received!
     image: /media/animal walfer .png
   - title: Animal Welfare at Lokal Indonesia Artisan Market
-    description: |-
-      Every animal deserves a life of dignity, care, and compassion. Through our Animal Welfare program, DTobing Foundation supports initiatives that improve the well-being of abandoned and vulnerable animals through rescue, rehabilitation, responsible adoption, sterilization, vaccination, and community education. We believe that lasting change begins with awareness and responsible action.
-
-      Working alongside local communities, volunteers, and partners, we also bring animal welfare initiatives to public events, including Lokal Indonesia Artisan Market, where adoption campaigns and educational activities inspire more people to become part of the solution. Together, we are creating a future where kindness toward animals is embraced as an essential part of building compassionate and sustainable communities.
+    description: Through our Animal Welfare program, DTobing Foundation supports initiatives that improve the well-being of abandoned and vulnerable animals through rescue, rehabilitation, responsible adoption, sterilization, vaccination, and community education. We believe that lasting change begins with awareness and responsible action. Working alongside local communities, volunteers, and partners, we also bring animal welfare initiatives to public events, including Lokal Indonesia Artisan Market, where adoption campaigns and educational activities inspire more people to become part of the solution.
     image: /media/BK-368.jpg
 gallery:
   - src: /media/animal walfare 2.png
