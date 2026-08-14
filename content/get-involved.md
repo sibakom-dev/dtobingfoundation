@@ -4,7 +4,7 @@ subtitle: Every act of support, big or small, creates ripples of change.
 pageDescription: Donate, volunteer, partner, or donate goods. There are many ways to support The Darius Tobing Foundation.
 ogImage: /media/1-e1749109167628.jpg
 opportunities:
-  - id: volunteer
+  - id: partnership
     title: Volunteer
     description: Give your time and skills. Whether you're a designer, educator, event organizer, or animal lover, we have meaningful volunteer opportunities for you.
     buttonText: Apply to Volunteer
