@@ -30,17 +30,17 @@ activities:
     image: /media/comunity support.png
 gallery:
   - src: /media/Hati-Suci-Orphanage.jpg
-    alt: Children at Hati Suci Orphanage
+    alt: Piles of donations of food and snacks for Hati Suci Orphanage for girls during Covid era
   - src: /media/2.png
-    alt: panti asuhan dorkas
+    alt: Happy  kids at Dorkas - an orphanage for girls. They just got donations boxes of books that they cannot wait to read
   - src: /media/1-Towel.jpg
-    alt: ''
+    alt: A beautiful smile from a pretty Oma who just recieved a blanket at Bina Bhakti Home for the elderly  in Tangerang
   - src: /media/Fajar-Baru-202601.jpg
-    alt: ''
+    alt: Dropping monthly donations to Fajar Baru Orphanage in Bekasi
   - src: /media/1-1.jpg
-    alt: ''
+    alt: Children at Pa Van Der Steur Orphanage are enjoying treat of lolipops
   - src: /media/2117f518-f5d8-4a04-b829-9167e275daca.jpg
-    alt: ''
+    alt: Happy to get donation of shoes
 layout: program.njk
 programLogo: /media/DTF-Logo-urip-Gawe-Urup-500px.png
 permalink: /programs/urip-gawe-urup/
