@@ -2,7 +2,7 @@
 title: Animal Welfare
 tagline: Creating a Kinder World for Every Living Being
 summary: Dedicated to creating a kinder world where every animal is valued, protected, and given the opportunity to thrive.
-heroImage: /media/animal welfare bg hero.png
+heroImage: /uploads/events/animal wafere 2.jpeg
 programKey: animal-welfare
 order: 1
 pageDescription: Paisley Things by the Darius Tobing Foundation empowers rural artisans through fair-trade ethical retail.
