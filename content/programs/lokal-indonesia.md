@@ -16,7 +16,7 @@ activities:
   - title: Artisan Markets
     description: Regular markets in Jakarta and across Indonesia bringing together curated artisan vendors and thousands of visitors.
     image: /media/IMG_7533.jpg
-  - title: Vendor Support
+  - title: Artisan support
     description: We help artisans with booth design, product presentation, pricing strategy, and customer engagement.
     image: /media/53cf9eac-727a-4381-8324-35467cea3de7.jpg
   - title: Community Building
