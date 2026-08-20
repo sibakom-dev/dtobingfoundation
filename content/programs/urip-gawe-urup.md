@@ -3,6 +3,10 @@ title: Community Outreach
 tagline: Direct Social Philanthropy
 summary: To provide hope and opportunity to those who have lost hope and were never given an opportunity in their simple quest to have a better life
 heroImage: /media/Urip2.png
+programKey: urip-gawe-urup
+order: 3
+pageDescription: Urip Gawe Urup, direct social philanthropy supporting education, community welfare, and animal care in Indonesia.
+ogImage: /media/Urip-Gawe-Urup-HERO-IMAGE.png
 objectives:
   - Collecting and delivering essential donations to orphanages, helping provide children with a safe, caring, and supportive environment.
   - Support orphanages and community care homes through donations and volunteering
@@ -28,7 +32,7 @@ gallery:
   - src: /media/Hati-Suci-Orphanage.jpg
     alt: Children at Hati Suci Orphanage
   - src: /media/2.png
-    alt: ''
+    alt: panti asuhan dorkas
   - src: /media/1-Towel.jpg
     alt: ''
   - src: /media/Fajar-Baru-202601.jpg
@@ -38,12 +42,8 @@ gallery:
   - src: /media/2117f518-f5d8-4a04-b829-9167e275daca.jpg
     alt: ''
 layout: program.njk
-order: 3
 programLogo: /media/DTF-Logo-urip-Gawe-Urup-500px.png
-programKey: urip-gawe-urup
 permalink: /programs/urip-gawe-urup/
-pageDescription: Urip Gawe Urup, direct social philanthropy supporting education, community welfare, and animal care in Indonesia.
-ogImage: /media/Urip-Gawe-Urup-HERO-IMAGE.png
 ---
 
 _"Urip Gawe Urup"_, in life, do good deeds. This ancient Javanese principle is the heart of our direct philanthropy work.
