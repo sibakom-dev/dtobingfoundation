@@ -36,7 +36,7 @@ gallery:
     alt: Supporting Rescue Shelters Across Indonesia
   - src: /media/IMG-20220204-WA0029.jpg
     alt: ''
-  - src: /media/IMG-20220307-WA0063.jpg
+  - src: /media/Animal Walfare 1.jpeg
     alt: ''
   - src: /media/Animal-Shelter.jpg
     alt: ''
