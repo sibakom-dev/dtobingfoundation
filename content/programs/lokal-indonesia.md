@@ -2,7 +2,7 @@
 title: Paisley Things-Artisan Empowerment
 tagline: Empowering Local Artisans, Preserving Indonesian Craftsmanship.
 summary: We empower local artisans by transforming creative potential into market-ready products through design collaboration, and access to broader market opportunities via Lokal Indonesia Artisan Market.
-heroImage: /media/300x500px-Halfpage-Banner.jpg
+heroImage: ''
 programKey: lokal-indonesia
 order: 2
 pageDescription: Lokal Indonesia organizes artisan markets that celebrate local craftsmanship and connect makers with markets.
@@ -14,7 +14,7 @@ objectives:
   - Build a community of conscious consumers who value local craftsmanship
 activities:
   - title: Artisan Markets
-    description: Regular markets in Jakarta and across Indonesia bringing together curated artisan vendors and thousands of visitors.
+    description: Regular markets in Jakarta and across Indonesia bringing together curated artisan vendors and visitors.
     image: /media/lokal indonesia artisan market.jpeg
   - title: Artisan support
     description: We help artisans with booth design, product presentation, pricing strategy, and customer engagement.
