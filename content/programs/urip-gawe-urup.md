@@ -2,7 +2,7 @@
 title: Community Outreach
 tagline: Direct Social Philanthropy
 summary: To provide hope and opportunity to those who have lost hope and were never given an opportunity in their simple quest to have a better life
-heroImage: /uploads/events/community outreach 1.jpeg
+heroImage: /uploads/events/HD community outreach.png
 programKey: urip-gawe-urup
 order: 3
 pageDescription: Urip Gawe Urup, direct social philanthropy supporting education, community welfare, and animal care in Indonesia.
