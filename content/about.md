@@ -7,7 +7,7 @@ ourStoryText: |-
   <p>The Darius Tobing Foundation is a self-funded social organization dedicated in helping people in need with the aim to give hope and opportunities to those who have lost hope and were never given an opportunity in their simple quest to have a better life.
 
   We establish a network of helping hands to work against poverty regardless of race, gender, religion, belief or ethnic origins.</p>
-ourStoryImage: /media/yayasan darius tobing.png
+ourStoryImage: /media/Darius tobing foundation bg.png
 visionText: A more compassionate and sustainable Indonesia, where cultural heritage thrives, communities are empowered, and every living being is treated with dignity.
 missionText: To preserve Indonesian craftsmanship, support marginalized communities through ethical commerce and direct philanthropy, and champion animal welfare through education and shelter.
 valuesList:
