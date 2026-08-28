@@ -1,24 +1,26 @@
 ---
+title: 'Lokal Indonesia Artisan Market 2026: Anual Merah Putih Celebration'
+date: 2026-08-07
+author: DTF Editorial Team
+category: Events
+coverImage: /uploads/stories/lokal indonesia artiasan market 2026.jpeg
+excerpt: |-
+  Lokal Indonesia Artisan Market is a regular exhibition and bazaar that provides a platform for Indonesian local businesses, creators, and artisans to showcase and sell their creative products.
+
+  Unlike conventional annual exhibitions, this dynamic platform hosts three to four specially curated markets each year, and has successfully held more than 30 editions since its inception in 2016.
+
+  Among its seasonal events, the annual Perayaan Merah Putih, stands as its flagship celebration. Coinciding with Indonesia’s Independence Month, the event is a special occasion that honors and celebrates the richness of the nation’s cultural heritage through local creativity, craftsmanship, and entrepreneurship.
+program: lokal-indonesia
 layout: story.njk
 permalink: /stories/lokal-indonesia-artisan-market-2024/
-title: "Lokal Indonesia Artisan Market 2024: A Celebration of Indonesian Craft"
-excerpt: "Over 10,000 visitors attended the largest Lokal Indonesia market to date, celebrating the best of Indonesian artisan craftsmanship over two vibrant days."
-coverImage: /media/Lokal-Indonesia-1000px.png
-author: DTF Editorial Team
-date: 2024-04-15
-category: Artisan
-program: lokal-indonesia
 ---
 
-The atmosphere was electric from the moment the gates opened. Over 10,000 visitors passed through the halls of the Lokal Indonesia Artisan Market 2024, our largest event to date, and every one of them left with something special.
+The atmosphere was electric from the moment the gates opened, and every visitor left with something special.
+Spread across two days at Menara Sun Life in South Jakarta, the market featured over 80 artisan vendors from across the archipelago.
 
-Spread across two days at Menara Sun Life in South Jakarta, the market featured over 80 artisan vendors from across the archipelago. From intricate Javanese batik to Torajan carved woodwork, from Balinese silver jewellery to NTT hand-woven ikat textiles, the market was a living museum of Indonesian craft.
+## What Made 2026 Special
 
-## What Made 2024 Special
-
-This year marked a significant milestone: we welcomed our first international buyers from Singapore, the Netherlands, and Australia, all drawn by word of mouth and our growing reputation for quality curation.
-
-The community atmosphere was palpable. Artisans spoke with visitors about their techniques, their villages, and the stories behind each piece. Children watched weaving demonstrations. Couples deliberated over which piece to take home. An elderly vendor from Solo sold out her entire booth by noon.
+The Lokal Indonesia Artisan Market 2026 edition marked a monumental milestone, celebrating both its 10th anniversary and its 30th successful event since its inception in 2016. Under the umbrella of the Darius Tobing Foundation, this year's flagship market introduced a strict, non-compete curation process to ensure that no two vendors offered the same product, directly protecting the commercial growth of each grassroots creator. The celebration was further elevated by high-profile advocacy from public figures Happy Djarot, Djarot Saiful Hidayat, and animal welfare ambassador Ayu Diah Pasha, alongside an exclusive partnership with BCA Solitaire & Prioritas that offered limited-edition rewards for premium collectors. You can read the full overview and details at Paisley Things.
 
 ## By the Numbers
 
@@ -26,9 +28,3 @@ The community atmosphere was palpable. Artisans spoke with visitors about their 
 - **10,000+** visitors
 - **3** international buyer groups
 - **100%** of vendors reported positive experience
-
-## Looking Ahead
-
-Following the success of 2024, we are already planning Lokal Indonesia 2025 and 2026, with expanded venues and new city partnerships in Surabaya and Bandung.
-
-We are grateful to every visitor, vendor, partner, and volunteer who makes these markets possible. Together, we are building something lasting.
