@@ -4,17 +4,15 @@ date: 2026-08-07
 author: DTF Editorial Team
 category: Events
 coverImage: /uploads/stories/lokal indonesia artiasan market 2026.jpeg
-excerpt: |-
-  Lokal Indonesia Artisan Market is a regular exhibition and bazaar that provides a platform for Indonesian local businesses, creators, and artisans to showcase and sell their creative products.
-
-  Unlike conventional annual exhibitions, this dynamic platform hosts three to four specially curated markets each year, and has successfully held more than 30 editions since its inception in 2016.
-
-  Among its seasonal events, the annual Perayaan Merah Putih, stands as its flagship celebration. Coinciding with Indonesia’s Independence Month, the event is a special occasion that honors and celebrates the richness of the nation’s cultural heritage through local creativity, craftsmanship, and entrepreneurship.
+excerpt: Lokal Indonesia Artisan Market is a regular exhibition and bazaar that provides a platform for Indonesian local businesses, creators, and artisans to showcase and sell their creative products.
 program: lokal-indonesia
 layout: story.njk
 permalink: /stories/lokal-indonesia-artisan-market-2024/
 ---
 
+Lokal Indonesia Artisan Market is a regular exhibition and bazaar that provides a platform for Indonesian local businesses, creators, and artisans to showcase and sell their creative products.
+Unlike conventional annual exhibitions, this dynamic platform hosts three to four specially curated markets each year, and has successfully held more than 30 editions since its inception in 2016.
+Among its seasonal events, the annual Perayaan Merah Putih, stands as its flagship celebration. Coinciding with Indonesia’s Independence Month, the event is a special occasion that honors and celebrates the richness of the nation’s cultural heritage through local creativity, craftsmanship, and entrepreneurship.
 The atmosphere was electric from the moment the gates opened, and every visitor left with something special.
 Spread across two days at Menara Sun Life in South Jakarta, the market featured over 80 artisan vendors from across the archipelago.
 
