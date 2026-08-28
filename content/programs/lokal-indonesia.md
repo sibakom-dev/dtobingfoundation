@@ -21,13 +21,13 @@ activities:
     image: /media/53cf9eac-727a-4381-8324-35467cea3de7.jpg
   - title: Community Building
     description: Building a loyal community of crafters and consumers who share a passion for authentic Indonesian goods.
-    image: /media/IMG_7967.jpg
+    image: /media/Untitled-design-19.png
 gallery:
-  - src: /media/IMG_8063.jpg
+  - src: /media/BK-623.jpg
     alt: ''
-  - src: /media/Lokal-Indonesia-500px-1.jpg
+  - src: /media/BK-667.jpg
     alt: ''
-  - src: /media/Lokal-Indonesia-500px-Banner.jpg
+  - src: /media/BK-634.jpg
     alt: ''
   - src: /media/IMG_7909.jpg
     alt: ''
