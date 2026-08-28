@@ -1,5 +1,5 @@
 ---
-title: Lokal Indonesia Artisan Market 2026
+title: Lokal Indonesia Artisan Market
 subtitle: Merah Putih Edition
 eventDate: 2026-08-07
 eventEndDate: 2026-08-09
