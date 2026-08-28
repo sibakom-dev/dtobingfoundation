@@ -1,13 +1,13 @@
 ---
 title: 200 Animals Vaccinated in Jakarta Animal Welfare Drive
-permalink: /stories/animal-welfare-drive-jakarta/
 date: 2023-11-20
 author: DTF Editorial Team
 category: Animal Welfare
-coverImage: /media/3.png
+coverImage: /media/animal shelter .png
 excerpt: In partnership with local veterinary clinics, we vaccinated and sterilized over 200 cats and dogs in a single community outreach weekend.
 program: urip-gawe-urup
 layout: story.njk
+permalink: /stories/animal-welfare-drive-jakarta/
 ---
 
 Over a single weekend in November 2023, a team of 12 volunteer veterinarians, 30 community volunteers, and our own foundation team came together to run Jakarta's largest grassroots animal welfare drive to date.
@@ -27,9 +27,3 @@ Our approach: go into communities, build trust, educate, and act. Not punitive, 
 - **200** animals vaccinated
 - **47** animals sterilized
 - **12** animals rehomed to new families
-
-## What's Next
-
-We are planning quarterly animal welfare drives across different Jakarta neighbourhoods in 2024. We are also working to establish a permanent low-cost veterinary clinic in partnership with a local vet school.
-
-If you are a veterinarian, vet student, or animal welfare advocate who'd like to volunteer, please [get in touch](/contact/).
