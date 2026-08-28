@@ -19,10 +19,3 @@ Spread across two days at Menara Sun Life in South Jakarta, the market featured 
 ## What Made 2026 Special
 
 The Lokal Indonesia Artisan Market 2026 edition marked a monumental milestone, celebrating both its 10th anniversary and its 30th successful event since its inception in 2016. Under the umbrella of the Darius Tobing Foundation, this year's flagship market introduced a strict, non-compete curation process to ensure that no two vendors offered the same product, directly protecting the commercial growth of each grassroots creator. The celebration was further elevated by high-profile advocacy from public figures Happy Djarot, Djarot Saiful Hidayat, and animal welfare ambassador Ayu Diah Pasha, alongside an exclusive partnership with BCA Solitaire & Prioritas that offered limited-edition rewards for premium collectors. You can read the full overview and details at Paisley Things.
-
-## By the Numbers
-
-- **80+** artisan vendors
-- **10,000+** visitors
-- **3** international buyer groups
-- **100%** of vendors reported positive experience
