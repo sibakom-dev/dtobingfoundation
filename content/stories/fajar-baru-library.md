@@ -1,33 +1,21 @@
 ---
-title: Rumah Lansia Sejahtera
+title: Sharing Care and Kindness at Rumah Lansia Sejahtera
 date: 2026-05-10
 author: DTF Editorial Team
 category: Community
 coverImage: /media/rumah lansia sejahtera.jpeg
-excerpt: Our second community library opens its doors in East Jakarta, providing free books, learning materials, and digital access to over 500 local children.
+excerpt: |-
+  The Darius Tobing Foundation recently brought warmth and care to the residents of Rumah Lansia Sejahtera through a meaningful donation initiative.
+  The visit was more than just an act of giving. It was an opportunity to connect, share moments of joy, and remind the elderly community that they are valued, cared for, and never alone.
 program: urip-gawe-urup
 layout: story.njk
 permalink: /stories/fajar-baru-library-opens/
 ---
 
-Books open doors. That simple truth is why The Darius Tobing Foundation opened the Fajar Baru Community Library, our second library, in the heart of a residential kampung in East Jakarta.
+The Darius Tobing Foundation recently brought warmth and care to the residents of **Rumah Lansia Sejahtera** through a meaningful donation initiative.
 
-Named _Fajar Baru_ (New Dawn), the library is more than a collection of books. It is a community space: a place where children can do homework, teenagers can discover new interests, and parents can access information that helps their families.
+The visit was more than just an act of giving. It was an opportunity to connect, share moments of joy, and remind the elderly community that they are valued, cared for, and never alone.
 
-## What the Library Offers
+Through the donation, the Foundation hopes to contribute to the daily needs and well-being of the residents while encouraging a spirit of compassion and solidarity within the wider community.
 
-The library opened with over 3,000 books covering fiction, non-fiction, science, arts, and children's literature in both Indonesian and English. We also installed four computers with supervised internet access, enabling students to research beyond their school's resources.
-
-Beyond books, the library hosts weekly reading sessions, storytelling afternoons for young children, and monthly workshops on topics ranging from digital literacy to traditional Indonesian arts.
-
-## The Community Response
-
-Within the first month, over 500 children registered as members. Teachers from three nearby schools have incorporated library visits into their weekly schedules.
-
-_"My daughter used to watch TV all afternoon. Now she reads every day,"_ shared one parent from the neighbourhood.
-
-## Sustaining the Library
-
-The Fajar Baru Library is sustained through a combination of foundation funding, community donations, and book drives. We welcome book donations, volunteer librarians, and workshop facilitators.
-
-If you'd like to contribute, please visit our [Get Involved](/get-involved/) page.
+For the Darius Tobing Foundation, meaningful change begins with simple acts of kindness. By reaching out and giving back, we continue our commitment to creating a more caring and inclusive community—one thoughtful gesture at a time.
