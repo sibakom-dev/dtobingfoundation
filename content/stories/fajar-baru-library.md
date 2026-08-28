@@ -1,13 +1,13 @@
 ---
-title: 'A New Chapter: The Fajar Baru Community Library'
-permalink: /stories/fajar-baru-library-opens/
-date: 2024-02-10
+title: Rumah Lansia Sejahtera
+date: 2026-05-10
 author: DTF Editorial Team
 category: Community
-coverImage: /media/2.png
+coverImage: /media/rumah lansia sejahtera.jpeg
 excerpt: Our second community library opens its doors in East Jakarta, providing free books, learning materials, and digital access to over 500 local children.
 program: urip-gawe-urup
 layout: story.njk
+permalink: /stories/fajar-baru-library-opens/
 ---
 
 Books open doors. That simple truth is why The Darius Tobing Foundation opened the Fajar Baru Community Library, our second library, in the heart of a residential kampung in East Jakarta.
